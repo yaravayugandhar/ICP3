@@ -1,0 +1,159 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/* main container */
+.main_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width:100%;
+}
+
+/* header container with profile image and text content (name and designation)*/
+.student_container{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(243, 240, 234);
+}
+
+.student_image_container{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:5px;
+}
+@media screen and (min-width:768px){
+    .student_image_container{
+        padding-left:30px;
+    }
+}
+.student_image{
+    width:100px;
+    height:100px;
+    border-radius:5px;
+}
+.sd_container{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    padding:12px;
+    align-items: flex-end;
+}
+
+@media screen and (min-width:768px){
+    .sd_container{
+        padding-right: 30px;
+    }
+}
+.s_name{
+    margin-bottom: 0px;
+    text-align: end;
+    font-size: 22px;
+}
+@media screen and (min-width:768px){
+    .s_name{
+        font-size: 30px;
+    }
+}
+.sd_heading{
+    margin-top: 8px;
+    text-align: end;
+    font-size: 18px;
+}
+@media screen and (min-width:768px){
+    .sd_heading{
+        font-size: 25px;
+    }
+}
+
+
+/* place holder image container */
+.ph_image_container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ph_image{
+    height:150px;
+    width:100%;
+}
+@media screen and (min-width:768px){
+    .ph_image{
+        height:350px;
+        width:80%;
+    }
+}
+
+/* feature projects container*/
+.responsive_container_features{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rcf_heading{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    font-family:cursive;
+}
+.container_contain_images{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media screen and (min-width:768px){
+    .container_contain_images{
+        flex-direction: row;
+    }
+}
+
+/* each project container */
+.sub_image_cont{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin:8px;
+    padding:8px;
+}
+@media screen and (min-width:768px){
+    .sub_image_cont{
+        width:25%;
+    } 
+}
+.image_heading{
+    font-size:22px;
+}
+.image_url{
+    width:150px;
+    height:150px;
+}
+
+/* git hub button */
+.git_code{
+    color:white;
+    background-color: rgb(20, 231, 55);
+    text-align:center;
+    font-size:18px;
+    font-family: 'Courier New', Courier, monospace;
+    border:none;
+    border-radius: 8px;
+    padding:8px;
+    cursor:pointer;
+}

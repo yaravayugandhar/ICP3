@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <title>Rock-paper-scissor</title>
+</head>
+<body>
+    <div class="main_container">
+        
+        <!-- header container game title -->
+        <div class="title_container">
+            <h1> Rock-Paper-Scissors</h1>
+            <img class="rock_paper_scissor_main_image" src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/446/187/datas/original.jpeg"/>
+        </div>
+
+        <!-- Score container block to display score -->
+        <div class="score_container_block">
+
+            <!-- block to display player score-->
+            <div class="player_score_container">
+                <h1 class="player_computer_score_heading">Player Score</h1>
+                <h1 class="player_computer_score" id="playerScoreElement"></h1>
+            </div>
+
+            <!-- block to display computer score -->
+            <div class="player_score_container">
+                <h1 class="player_computer_score_heading">Computer Score</h1>
+                <h1 class="player_computer_score" id="computerScoreElement"></h1>
+            </div>
+
+        </div>
+
+
+        <!-- rock paper scissor image/button container-->
+        <div class="image_button_main_container">
+
+            <h1 class="lets_play_heading"> Lets Play . . .</h1>
+            <p class="select_option_heading"> Select a option to start the game</p>
+            <div class="image_button_container">
+
+                <!--Rock Container-->
+                <div class="each_sub_container">
+                    <img class="rock_paper_scissor_image" src="https://www3.bostonglobe.com//rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/rock--left.png"/>
+                    <button class="rock_paper_scissor_button rock_button" id="rockButtonElement">Rock</button>
+                </div>
+                <!-- paper Container-->
+                <div class="each_sub_container">
+                    <img class="rock_paper_scissor_image" src="https://www3.bostonglobe.com//rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/paper--left.png"/>
+                    <button class="rock_paper_scissor_button paper_button" id="paperButtonElement">Paper</button>
+                </div>
+                <!-- Scissor Container-->
+                <div class="each_sub_container">
+                    <img class="rock_paper_scissor_image" src="https://www3.bostonglobe.com//rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/scissors--left.png"/>
+                    <button class="rock_paper_scissor_button scissors_button" id="scissorsButtonElement">Scissor</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- game win/lose output status block-->
+        <div class="game_status_container" id="gameStatusContainer">
+            <h3>Computer's choice - <span id="computerChoiceText"></span> | players choice - <span id="playerChoiceText"></span></h3>
+            <h3 class="game_status_text" id="gameStatusText"></h3>
+        </div>
+    </div>
+
+
+    <!-- connect with java script-->
+    <script src="index.js"></script>
+</body>
+</html>
